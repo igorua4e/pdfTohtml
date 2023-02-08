@@ -1,0 +1,505 @@
+/*обнуление */
+*{
+	padding:0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;} 
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul, li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+/*______обнуление*/
+
+
+/*====================================================*/
+/*в початковий шаблон для оболочки та контейнеру*/
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&;800&display=swap');
+body{
+	font-family:'Courier Prime', sans-serif;
+	font-size: 13px;
+}
+/*знаходить в імені класу контеінер і застосовує стилі*/
+[class*="__container"]{
+	max-width: 900px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.wrapper {
+	
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.page{
+
+	/*flex: 1 1 auto;*/
+}
+
+
+/*==============================================*/
+
+.header {}
+.header__container {
+}
+.header__container h1{
+	padding: 30px 0px 10px 0px;
+	font-size: 18px;
+	font-weight: 800;
+}
+.header__container h2{
+	padding: 0px 0px 2px 10px;
+	font-weight: 600;
+	font-size: 14px;
+}
+/*==================================*/
+
+.page_topblocks {
+	height: 60px;
+	display: flex;
+}
+.topblocks-left {
+	height: 80px;
+	flex: 1 1 58%;
+}
+.topblocks-left-title {
+	display: flex;
+	height: 20px;
+	color: #fff;
+	background-color:#000;
+	align-items: center;
+	padding-left: 10px;
+	-webkit-print-color-adjust: exact;
+}
+.topblocks-left-subtitle {
+	height: 20px;
+	display: flex;
+	align-items: center;
+	border-left: 3px solid black;
+	border-bottom: 1px solid black;
+	border-right: 3px solid black;
+	padding-left: 5px;
+}
+.topblocks-left-text {
+	display: flex;
+	align-items: center;
+	height: 20px;
+	border-left: 3px solid black;
+	border-bottom: 1px solid black;
+	border-right: 3px solid black;
+	padding-left: 5px;
+}
+.topblocks-left-text-text {}
+.topblocks-left-text-input textarea {
+	
+}
+.topblocks-right {
+	margin: 0px 0px 3px 3px;
+	border-left: 3px solid black;
+	
+	height: 57px;
+
+}
+.topblocks-right-sbscribe {
+	display: flex;
+	align-items: center;
+	height: 20px;
+	background-color: lightgray;
+	-webkit-print-color-adjust: exact;
+	padding-left: 3px;
+	font-size: 12px;
+}
+.topblocks-right_form {
+	display: flex;
+	align-items: flex-end;
+	padding-left: 3px;
+}
+.topblocks-right_form-text {
+	padding-top: 20px;
+	
+	font-size: 12px;
+}
+/*====================================*/
+.page_topblocks_check {
+	border: 2px solid black;
+	padding-left: 3px;
+}
+.page_topblocks_check_title {
+	margin-bottom: 10px;
+	padding-top: 5px ;
+
+}
+.page_topblocks_check_box {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+/*=============================================*/
+.page_Adresse {
+	border-bottom:1px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+.page_Adresse_title {
+	display: flex;
+	height: 20px;
+	color: #fff;
+	background-color: black;
+	-webkit-print-color-adjust: exact;
+	align-items: center;
+	padding-left: 10px;
+}
+.page_Adresse_check {
+	display: flex;
+	gap: 15px;
+	height: 20px;
+	align-items: center;
+	padding-left: 5px;
+}
+.page_Adresse_Vor {
+	border-top:1px solid black;
+	display: flex;
+	padding-left: 3px;
+	align-items: center;
+	height: 20px;
+}
+.page_Adresse_Stra {
+	border-top:1px solid black;
+	display: flex;
+	padding-left: 3px;
+	align-items: center;
+	height: 20px;
+}
+.stra {
+	margin-right: 200px;
+}
+.PLZ {
+	
+}
+.Ort {
+	margin-left: 200px;
+}
+.page_Adresse_Geburtsdatum {
+	border-top:1px solid black;
+	display: flex;
+	padding-left: 3px;
+	align-items: center;
+	height: 20px;
+}
+.Geburtsdatum {}
+.Firmenbuchnummer {
+	margin-left:200px ;
+}
+.page_Adresse_Kundennummer {
+	border-top:1px solid black;
+	display: flex;
+	padding-left: 3px;
+	align-items: center;
+	height: 20px;
+}
+.Kundennummer {}
+.page_Adresse_Ansprechpartner {
+	border-top:1px solid black;
+	display: flex;
+	padding-left: 3px;
+	align-items: center;
+	height: 20px;
+}
+.Ansprechpartner {}
+.page_Adresse_Erreichbar {
+	border-top:1px solid black;
+	display: flex;
+	padding-left: 3px;
+	align-items: center;
+	height: 20px;
+}
+.Erreichbar {}
+.von {}
+.bis {}
+.h {}
+
+.page_Adresse_Daten{
+	display: flex;
+	height: 20px;
+	color: #fff;
+	background-color: black;
+	-webkit-print-color-adjust: exact;
+	align-items: center;
+	padding-left: 10px;
+}
+.page_Adresse_Vorwahl {
+	display: flex;
+	padding-left: 3px;
+	align-items: center;
+	height: 20px;
+}
+.Vorwahl {}
+.Rufnummer {
+	margin-left: 150px;
+}
+
+.page_Adresse_Art {
+	border-top:1px solid black;
+	display: flex;
+	padding-left: 3px;
+	align-items: center;
+	height: 20px;
+}
+.Art {
+	margin-right: 30px;
+}
+
+.page_Adresse_ISDN {
+	border-top:1px solid black;
+	display: flex;
+	padding-left: 3px;
+	align-items: center;
+	height: 20px;
+}
+.ISDN {
+	padding-left: 150px;
+	margin-right: 20px;
+}
+.MSN {}
+
+
+.page_Adresse_ISDN-Mu {
+	border-top:1px solid black;
+	display: flex;
+	padding-left: 3px;
+	align-items: center;
+	height: 20px;
+}
+ .ISDN-Multia{
+ 	padding-left: 150px;
+ }
+ .page_Adresse_Unterschrift {
+ 	display: flex;
+	height: 20px;
+	color: #fff;
+	background-color: #000;
+	-webkit-print-color-adjust: exact;
+	align-items: center;
+	padding-left: 10px;
+ }
+ .page_Adresse_ich {
+ 	border-top:1px solid black;
+	display: flex;
+	flex-direction: column;
+	padding-left: 3px;
+	padding-top:5px ;
+	
+ }
+.page_Adresse_ich-text {
+	margin-bottom: 10px;
+}
+.page_Adresse_ich_bot {
+	display: flex;
+}
+.Ort {
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 250px;
+}
+.Unterschrift {
+	margin-left: 30px;
+}
+.page_Adresse_Bei {
+	border-top:1px solid black;
+	display: flex;
+	align-items: center;
+	height: 20px;
+	justify-content: center;
+	font-size: 12px;
+}
+.Bei {}
+/*======================================*/
+
+.footer_title {
+	font-size: 16px;
+	line-height: 10px;
+	color: #000000;
+	font-weight: 800;
+	padding-top: 4px;
+}
+.footer_fisrnane-block {
+	display: flex;
+	margin-top: 10px;
+}
+.Firmenname {
+	font-size: 12px;
+}
+.Colt {
+	margin-left: 95px;
+}
+.Firmenbuchnummer {
+	margin-left: 90px;
+}
+.wien {
+	margin-left: 20px;
+}
+.footer_strabe-block {
+	margin-top: 8px;
+	display: flex;
+	border-bottom:1px solid black;
+	padding-bottom: 8px;
+}
+.strabe {}
+.Kärntner {
+	margin-left: 140px;
+}
+
+.footer_Hiermit {}
+.footer_Hiermit-text {
+	padding-top: 2px;
+	margin-bottom: 5px;
+}
+.footer_admin {
+	display: flex;
+	align-items: center;
+}
+.Administration {}
+.Technik {
+	margin-left: 70px;
+}
+.footer_tel {
+	border-bottom:1px solid black;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	display: flex;
+}
+.Tel1 {}
+.tel2 {
+	margin-left: 230px;
+}
+
+.footer_fax {
+	display: flex;
+	height: 20px;
+	align-items: center;
+	border-bottom:1px solid black;
+}
+.footer_fax1 {}
+.footer_fax2 {
+	margin-left: 255px;
+}
+
+.footer_mail {
+	display: flex;
+	height: 20px;
+	align-items: center;
+	border-bottom:1px solid black;
+}
+.mailmon {}
+.email {
+	margin-left: 185px;
+}
+
+.footer_Umscha {
+	display: flex;
+	height: 20px;
+	align-items: center;
+	border-bottom:1px solid black;
+}
+.Umscha {}
+.Datum {}
+.Zeit {}
+.von {}
+.bis {}
+.h {}
+
+.footer_check {
+	height: 90px;
+	border-bottom:1px solid black;
+	padding-left: 7px 0px 7px 0px;
+}
+.Zu {
+	padding-top: 4px;
+	margin-bottom: 5x;
+}
+.footer_check-item {
+	display: flex;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.Entbündelung {
+
+}
+.footer_check-item2{
+	display: flex;
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+}
+
+.footer_Ort {
+	border-bottom:1px solid black;
+	padding-bottom: 5px;
+
+}
+.footer_Ort-top {
+	display: flex;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.ort {}
+.Unterschrift {
+	margin-left:300px;
+}
+.footer_Ort-bot {
+	display: flex;
+}
+.Datum {}
+
+.footer_vom {
+	padding: 2px 0px;
+	border-bottom:1px solid black;
+}
+.footer_vom-top {
+	display: flex;
+	margin-bottom: 10px;
+}
+.vom {
+	font-weight: 700;
+}
+.footer_vom-mid {
+	margin-bottom: 10px;
+	display: flex;
+}
+.Erfolgreich {}
+.vonnb {
+	margin-left: 250px;
+}
+.footer_vom-bot {
+	display: flex;
+}
+.mit {}
